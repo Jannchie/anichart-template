@@ -8,23 +8,15 @@
   },
   "dependencies": {
     "anichart": "2.3.1-alpha",
-    "perf_hooks": "^0.0.1",
     "serve-static": "^1.14.1"
   },
   "devDependencies": {
     "parcel": "^2.0.0-rc.0",
-    "parcel-plugin-static-files-copy": "^2.6.0",
     "typescript": "^4.3.5"
   },
   "keywords": [
     "chart",
     "data",
     "anichart"
-  ],
-  "staticFiles": {
-    "staticPath": [
-      "data",
-      "./node_modules/@ffmpeg/core/dist"
-    ]
-  }
+  ]
 }
