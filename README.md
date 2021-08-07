@@ -1,2 +1,11 @@
 # anichart-template
-Created with CodeSandbox
+
+# Start
+
+``` bash
+parcel index.html --open
+```
+
+``` build
+parcel build index.html
+```

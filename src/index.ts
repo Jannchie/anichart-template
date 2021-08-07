@@ -1,18 +1,23 @@
 import * as ANI from "anichart";
 
 const stage = new ANI.Stage();
-stage.canvas.width = 400;
-stage.canvas.height = 300;
 
+ANI.recourse.loadCSV("./test.csv", "data");
+let bar = new ANI.BarChart({
+  dateLabelOptions: {},
+});
+
+stage.canvas.width = 800;
+stage.canvas.height = 600;
+stage.output = true;
 const rect = new ANI.Rect({
-  shape: { width: 400, height: 300 },
-  fillStyle: "#09F"
+  shape: { width: 800, height: 600 },
+  fillStyle: "#efefef",
 });
 stage.addChild(rect);
-
-const hello = new ANI.Text({ text: "hello, world", fillStyle: "#FFF" });
+stage.addChild(bar);
+const hello = new ANI.Text({ text: "hello, world" });
 stage.addChild(hello);
-
 stage.play();
 
 new ANI.MapChart({});
